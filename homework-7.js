@@ -28,7 +28,7 @@ let good = 'desk'
 let price = 350
 
 const chekBudget = (currentBudget) => {
-  if(currentBudget > price) {
+  if(currentBudget >= price) {
     console.log('Стол приобретён. Спасибо за покупку!')
   }
   else{
