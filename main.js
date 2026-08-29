@@ -7,9 +7,6 @@ changeColorAllCardButton.addEventListener('click', () => {
   productCards.forEach((card) => card.style.backgroundColor = greenColorHash)
 })
 
-
-
-
 const firstProductCards = document.querySelector('.card');
 const changeColorFirstCardButton = document.querySelector('.change-color-first-card');
 
@@ -18,14 +15,11 @@ firstProductCards.style.backgroundColor = blackColorHash
 
 })
 
-
-
 const openGoogleButton = document.querySelector('.open-google');
 
 openGoogleButton.addEventListener('click', openGoogle, () => {
   window.open('https://google.com')
 })
-
 
 function openGoogle() {
   const answer = confirm('Вы действительно хотите открыть Google');
