@@ -13,16 +13,22 @@ const things = [
   'Книга',
   'Шлем'
 ]
-const thing = things.includes('Книга')
 
-console.log(thing)
+function findElement(array, i) {
+  if (typeof i !== 'string') {
+    return 'Некорректные выходные данные'
+  } 
+  return array.includes(i)
+}
+console.log(findElement(things, 'Кровать'))
+console.log(findElement(things, 1))
 
 
-const reverseNumbers = numbers.toReversed()
-console.log(reverseNumbers)
-
-const reverseThings = things.toReversed()
-console.log(reverseThings)
+function reverseArray(array) {
+  return array.reverse()
+}
+console.log(reverseArray(things))
+console.log(reverseArray(numbers))
 
 
 const changedComments = postComments.map(comment => {
