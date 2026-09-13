@@ -59,3 +59,18 @@ changedWithInvalid.forEach(comment => {
   }
 })
 
+
+const emailWithCom = postComments.filter(comment => comment.email.includes('.com'))
+console.log(emailWithCom)
+
+
+const emailComments = postComments.map(item => item.email)
+console.log(emailComments)
+
+
+const commentsToString = emailComments.join(',')
+console.log(commentsToString)
+
+
+const commentsToString2 = emailComments.toString()
+console.log(commentsToString2)
